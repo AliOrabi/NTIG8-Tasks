@@ -39,7 +39,7 @@ showSingleTask = (element, i)=>{
     btn1 = createCustomElements(mainDiv2,'button','btn btn-danger mx-2','delete', [])
     btn1.addEventListener('click', function(e){ deletebtn(element.ind, e)})
     btn2 = createCustomElements(mainDiv2,'button','btn btn-warning mx-2','edit', [])
-    btn2.addEventListener('click', function(e){ editBtn (element.ind, e)})
+    btn2.addEventListener('click', function(e){ editTask (element.ind, e)})
     btn3 = createCustomElements(mainDiv2,'button','btn btn-primary mx-2','change status', [])
     btn3.addEventListener('click', function(e){ changeStatus(i) })
 }
