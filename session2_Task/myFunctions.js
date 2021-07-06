@@ -3,7 +3,7 @@ myAddForm = document.querySelector('#form-div form')
 let showHide = document.querySelector('#showHide')
 form_div = document.querySelector('#form-div')
 p = document.querySelector('#content-wrapper')
-editBtn = document.querySelector("#form-div form")
+editTask = document.querySelector("#form-div form")
 
 const getAllTasks = ( ) =>{
     try { 
@@ -76,7 +76,7 @@ addTask = (task) =>{
     showSingleTask(task, tasks.length-1)
 }
 
-editTask = (ind, element) =>{
+editTask = (ind, e) =>{
     showHide.click()
     showHide.textContent = 'Edit'
     document.querySelector(".addBtn").textContent = "Edit"
